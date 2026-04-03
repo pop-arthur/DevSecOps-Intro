@@ -1,0 +1,6 @@
+=== SAST/DAST Correlation Report ===
+SAST: 25
+ZAP: 10
+Nuclei:        1
+Nikto: 86
+SQLmap:        1

