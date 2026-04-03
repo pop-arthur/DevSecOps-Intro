@@ -40,7 +40,11 @@
 3) Publicly accessible functionality without authentication — key features such as the product catalog and authentication endpoints are exposed to unauthenticated users, expanding the attack surface.
 
 ## Task 2 — PR Template Setup 
+![img_2.png](screenshots/lab01/img_2.png)
 
+### Analysis of PR Templates in Collaboration
+
+Pull request templates standardize the contribution process by ensuring that all developers provide consistent and complete information. This improves code review efficiency, as reviewers can quickly understand the purpose, changes, and testing performed.
 
 ## GitHub Community
 
