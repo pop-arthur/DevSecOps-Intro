@@ -39,6 +39,9 @@
 
 3) Publicly accessible functionality without authentication — key features such as the product catalog and authentication endpoints are exposed to unauthenticated users, expanding the attack surface.
 
+## Task 2 — PR Template Setup 
+
+
 ## GitHub Community
 
 Starring repositories helps track useful projects and supports maintainers.
