@@ -1,0 +1,2 @@
+Target URL,Place,Parameter,Technique(s),Note(s)
+http://192.168.102.14:3000/rest/products/search?q=,URI,#1*,B,
