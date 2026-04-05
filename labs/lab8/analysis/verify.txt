@@ -1,0 +1,2 @@
+
+[{"critical":{"identity":{"docker-reference":"localhost:5001/juice-shop@sha256:872efcc03cc16e8c4e2377202117a218be83aa1d05eb22297b248a325b400bd7"},"image":{"docker-manifest-digest":"sha256:872efcc03cc16e8c4e2377202117a218be83aa1d05eb22297b248a325b400bd7"},"type":"https://sigstore.dev/cosign/sign/v1"},"optional":{}}]
