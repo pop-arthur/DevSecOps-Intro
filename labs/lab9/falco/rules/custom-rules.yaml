@@ -1,0 +1,7 @@
+- rule: Write Binary Under UsrLocalBin
+  desc: Detect writes under /usr/local/bin inside any container
+  condition: container.id != host and fd.name startswith /usr/local/bin/
+  output: >
+    Falco Custom: File write in /usr/local/bin (container=%container.name file=%fd.name)
+  priority: WARNING
+  tags: [container, drift]
