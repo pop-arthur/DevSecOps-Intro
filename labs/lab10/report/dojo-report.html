@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://localhost:8080/reports/custom -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title></title>
+    <link rel="stylesheet" href="./custom_files/bootstrap.min.css">
+    <!-- Custom Fonts -->
+    <link href="./custom_files/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <style type="text/css">
+        @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
+
+        .label {
+          border-color: #DEE1E6;
+          color: #ffffff !important;
+        }
+
+        .container {
+            margin: 0 auto;
+            max-width: 960px;
+        }
+
+        .page-cover {
+            margin-bottom: 600px !important;
+        }
+
+        .page-cover-spacer {
+            height: 400px !important;
+        }
+
+        .panel-default {
+            border-color: #A1C0D7 !important;
+        }
+
+        .panel-default > .panel-heading {
+            color: #333 !important;
+            background-color: rgba(32, 166, 216, 0.75)!important;
+            border-color: rgba(32, 166, 216, 0.75) !important;
+            border-radius: 0px !important;
+        }
+
+        .panel-info {
+            border-color: #DEE1E6 !important;
+            border-radius: 0px !important;
+        }
+
+        .panel-info > .panel-heading {
+            color: #333 !important;
+            background-color: #DEE1E6 !important;
+            border-color: #DEE1E6 !important;
+            border-radius: 0px !important;
+        }
+
+        .panel-body {
+            border-radius: 0px !important;
+        }
+
+        .severity {
+            font-size: 100%;
+        }
+
+        .severity- {
+            color: black !important;
+        }
+
+        .severity-Info {
+            background-color: #888888 !important;
+        }
+
+        .severity-Low {
+            background-color: #337ab7 !important;
+        }
+
+        .severity-Medium {
+            background-color: #FBE413 !important;
+        }
+
+        .severity-High {
+            background-color: #f09835 !important;
+        }
+
+        .severity-Critical {
+            background-color: #d9534f !important;
+        }
+
+        .panel-heading {
+            padding: 1px 5px;
+        }
+
+        .page-cover {
+            page-break-after: always
+        }
+
+        .keep-together {
+            page-break-inside: avoid
+        }
+
+        #findings, #executive {
+            page-break-before: always;
+        }
+
+        .graph {
+            height: 250px;
+            width: 418px;
+        }
+
+        .graph-2x {
+            height: 250px;
+            width: 898px;
+        }
+
+        h6{
+            font-size: 120%;
+            border-bottom: 1px solid black;
+            padding-bottom: 8px;
+        }
+
+        .panel-heading h6{
+            border-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        pre, p {
+            padding: 0;
+            border: 0;
+            background-color: transparent;
+            page-break-inside: auto;
+            margin-bottom: 15px !important;
+        }
+
+        pre {
+            white-space: pre-wrap !important;
+            padding: 0 !important;
+            overflow: visible !important;
+            word-break: normal !important;
+        }
+
+        ul{
+            margin-bottom: 15px !important;
+        }
+
+        h4, .h4, h5, .h5, h6, .h6 {
+            margin-top: 20px;
+            margin-bottom: 11px;
+        }
+
+        .panel-heading h5 {
+          color: white !important;
+        }
+
+        div.pretty-graphs, .panel, .panel-body {
+            page-break-inside: avoid;
+        }
+
+        *, pre {
+            font-family: 'Roboto Slab', monospace !important;
+            font-size: 13px;
+        }
+
+        .flot-tick-label.tickLabel {
+            font-size: 11px;
+        }
+
+        .raw_request {
+            font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace !important;
+        }
+
+        .panel-warning .panel-heading h4{
+            color: #fff;
+        }
+
+        @media not print {
+            .report-page-break {
+                display: flex;
+                align-items: center;
+                text-align: center;
+            }
+            .report-page-break::before,
+            .report-page-break::after {
+                content: '';
+                flex: 1;
+                border-bottom: 1px dashed #000;
+            }
+            .report-page-break:not(:empty)::before {
+                margin-right: 0.25em;
+            }
+            .report-page-break:not(:empty)::after {
+                margin-left: 0.25em;
+            }
+        }
+
+        @media print {
+            .report-page-break {
+                page-break-after: always;
+                visibility: hidden;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    
+    
+
+    <div class="container" id="html_report">
+        
+        
+            
+
+<div class="row cover_page report_widget">
+	<div class="col-lg-12">
+		<h1 id="heading">Engagement Security Report for Juice Shop</h1>
+		<h3 id="sub_heading">Engagement: Labs Security Testing</h3>
+		<h4 id="meta_info">Generated: Apr 09, 2026</h4>
+		<p><strong>Generated:</strong> Apr 10, 2026</p>
+	</div>
+</div>
+<div class="report-page-break">Page Break</div>
+
+        
+            
+
+<h1>Vulnerability management snapshot — Juice Shop (labs)</h1>
+<div class="wysiwyg_content report_widget">
+    <h2><strong>Audience:</strong> engineering leads &amp; security stakeholders</h2><p><strong>Source:</strong> OWASP DefectDojo (local Docker Compose), API v2 export on 2026-04-10<br><strong>Engagement:</strong> Labs Security Testing<br><strong>Product:</strong> Juice Shop</p><hr><h3>Note on DAST coverage</h3><p>The ZAP report (<code inline="">zap-report-noauth.json</code>) failed to import into DefectDojo due to format mismatch (JSON instead of required XML).<br>As a result, DAST findings are not included in the statistics below.<br>Re-import can be performed using ZAP XML export for full coverage.</p><hr><h2>Executive summary</h2><p>A total of <strong>372 active findings</strong> were aggregated from Semgrep, Trivy, Nuclei, and Grype scans.</p><p>Severity distribution shows dominance of <strong>High (186)</strong> and <strong>Medium (122)</strong> findings, with <strong>22 Critical vulnerabilities</strong> requiring immediate attention.</p><p>Most findings remain active with minimal mitigation applied, indicating this snapshot represents an early-stage vulnerability assessment rather than a mature remediation phase.</p><p>No evidence of large-scale mitigation or closure activity is observed yet, suggesting that prioritization and remediation workflows should be initiated.</p><hr><h2>Severity distribution</h2><table><thead><tr><th>Severity</th><th align="right">Count</th></tr></thead><tbody><tr><td>Critical</td><td align="right">22</td></tr><tr><td>High</td><td align="right">186</td></tr><tr><td>Medium</td><td align="right">122</td></tr><tr><td>Low</td><td align="right">29</td></tr><tr><td>Info</td><td align="right">13</td></tr><tr><td><strong>Total</strong></td><td align="right"><strong>372</strong></td></tr></tbody></table><hr><h2>Findings by scanner</h2><table><thead><tr><th>Scanner</th><th align="right">Findings</th></tr></thead><tbody><tr><td>Semgrep JSON Report</td><td align="right">25</td></tr><tr><td>Trivy Scan</td><td align="right">185</td></tr><tr><td>Anchore Grype</td><td align="right">161</td></tr><tr><td>Nuclei Scan</td><td align="right">1</td></tr><tr><td>ZAP Scan</td><td align="right">0 (import failed — JSON format not supported)</td></tr></tbody></table><hr><h2>Key observations</h2><ul><li><p>Vulnerabilities are heavily concentrated in dependency scanning tools (Trivy, Grype), indicating <strong>outdated or vulnerable packages</strong>.</p></li><li><p>Static analysis (Semgrep) contributes fewer but <strong>code-level security issues</strong>, which may require developer intervention.</p></li><li><p>Lack of mitigated findings suggests <strong>remediation has not yet started</strong>.</p></li><li><p>Absence of DAST data (ZAP) reduces visibility into runtime vulnerabilities.</p></li></ul><hr><h2>Recommended next steps</h2><ul><li><p>Fix ZAP import by exporting results in <strong>XML format</strong> and re-import into DefectDojo.</p></li><li><p>Prioritize remediation of <strong>Critical and High vulnerabilities</strong> identified by Trivy and Grype.</p></li><li><p>Begin <strong>verification and triage process</strong>:</p><ul><li><p>mark false positives</p></li><li><p>confirm severity</p></li><li><p>assign ownership</p></li></ul></li><li><p>Establish SLA tracking and remediation deadlines for high-risk findings.</p></li><li><p>Integrate scanning into CI/CD for continuous vulnerability monitoring.</p></li></ul><hr><h2>Artifacts</h2><ul><li><p>Metrics snapshot: <code inline="">labs/lab10/report/metrics-snapshot.md</code></p></li><li><p>Findings export: <code inline="">labs/lab10/report/findings.csv</code></p></li><li><p>Report: <code inline="">labs/lab10/report/dojo-report.pdf</code></p></li></ul><hr>
+</div>
+
+        
+            
+
+
+
+
+
+
+
+
+<div id="endpoint_content" class="endpoint_content report_widget">
+    
+</div>
+
+        
+            <div class="report-page-break">Page Break</div>
+        
+            
+
+
+
+
+
+
+
+
+
+<div id="finding_list_content" class="finding_list_content report_widget">
+    
+</div>
+
+        
+            
+        
+    </div>
+
+
+
+
+
+</body></html>
