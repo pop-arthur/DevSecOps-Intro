@@ -1,0 +1,5 @@
+=== CPU Model Comparison ===
+Host CPU:
+model name	: Intel Xeon Processor (Skylake, IBRS)
+Kata VM CPU:
+model name	: Intel Xeon Processor (Skylake, IBRS)
